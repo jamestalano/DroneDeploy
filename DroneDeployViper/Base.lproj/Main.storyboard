@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3BN-Qw-iQj">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Screen-->
+        <scene sceneID="SvP-ut-duZ">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="ctZ-Fd-zMw" customClass="LoginViewController" customModule="DroneDeployViper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Fw-hJ-Zf6"/>
+                        <viewControllerLayoutGuide type="bottom" id="mbn-Oy-jim"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VJg-6m-7Xa">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5V-ez-Nqt">
+                                <rect key="frame" x="195" y="448" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onLogin:" destination="ctZ-Fd-zMw" eventType="touchUpInside" id="wzr-Dk-BvV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d5V-ez-Nqt" firstAttribute="centerX" secondItem="VJg-6m-7Xa" secondAttribute="centerX" id="H5P-mT-Lp3"/>
+                            <constraint firstItem="d5V-ez-Nqt" firstAttribute="centerY" secondItem="VJg-6m-7Xa" secondAttribute="centerY" id="ijB-5I-zc7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login Screen" id="cKR-m3-oyb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaE-tk-HbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="23m-Bd-ANW" customClass="LoginModuleInitializer" customModule="DroneDeployViper" customModuleProvider="target">
+                    <connections>
+                        <outlet property="loginViewController" destination="ctZ-Fd-zMw" id="kQt-Iz-PqI"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="228" y="-1411"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="RZr-yQ-0kf">
+            <objects>
+                <viewController storyboardIdentifier="Page2ViewController" id="kyb-JN-Pue" customClass="Page2ViewController" customModule="DroneDeployViper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P1F-bF-Faf"/>
+                        <viewControllerLayoutGuide type="bottom" id="0J2-tS-D7o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bSt-pg-DL3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-LN-cwe">
+                                <rect key="frame" x="171.66666666666666" y="448" width="84.999999999999972" height="30"/>
+                                <state key="normal" title="Go to page2"/>
+                                <connections>
+                                    <action selector="onGoToThird:" destination="kyb-JN-Pue" eventType="touchUpInside" id="oOk-HK-pPT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl3-U4-I3N">
+                                <rect key="frame" x="191" y="172" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPA-Wp-daW">
+                                <rect key="frame" x="360" y="44" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="onLogOut:" destination="kyb-JN-Pue" eventType="touchUpInside" id="XCm-80-VQE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xPA-Wp-daW" secondAttribute="trailing" constant="20" symbolic="YES" id="FyW-Kf-soA"/>
+                            <constraint firstItem="rl3-U4-I3N" firstAttribute="top" secondItem="P1F-bF-Faf" secondAttribute="bottom" constant="128" id="IRD-vP-ODV"/>
+                            <constraint firstItem="xPA-Wp-daW" firstAttribute="top" secondItem="P1F-bF-Faf" secondAttribute="bottom" id="MXo-ZV-Ded"/>
+                            <constraint firstItem="yO4-LN-cwe" firstAttribute="centerY" secondItem="bSt-pg-DL3" secondAttribute="centerY" id="N5l-a1-0MC"/>
+                            <constraint firstItem="rl3-U4-I3N" firstAttribute="centerX" secondItem="bSt-pg-DL3" secondAttribute="centerX" id="Uph-bg-gym"/>
+                            <constraint firstItem="yO4-LN-cwe" firstAttribute="centerX" secondItem="bSt-pg-DL3" secondAttribute="centerX" id="jmL-Jj-YwN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="QrM-AA-JB8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpX-sD-ArU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="-1411"/>
+        </scene>
+        <!--Page3 View Controller-->
+        <scene sceneID="JJj-WX-ZOi">
+            <objects>
+                <viewController storyboardIdentifier="Page3ViewController" id="QAy-Tr-0pM" customClass="Page3ViewController" customModule="DroneDeployViper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HVu-YF-Bqp"/>
+                        <viewControllerLayoutGuide type="bottom" id="CI7-oS-hdP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8q2-hU-yo4">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzF-ES-LsJ">
+                                <rect key="frame" x="190" y="174" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LN-jZ-nZC">
+                                <rect key="frame" x="20" y="52" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBack:" destination="QAy-Tr-0pM" eventType="touchUpInside" id="OHc-4i-zV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-S0-Q3s">
+                                <rect key="frame" x="361" y="44" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="onLogout:" destination="QAy-Tr-0pM" eventType="touchUpInside" id="Mhd-fS-LeO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zxt-S0-Q3s" secondAttribute="trailing" constant="19" id="2IQ-HA-Izx"/>
+                            <constraint firstItem="0LN-jZ-nZC" firstAttribute="leading" secondItem="8q2-hU-yo4" secondAttribute="leading" constant="20" symbolic="YES" id="83i-0X-onY"/>
+                            <constraint firstItem="DzF-ES-LsJ" firstAttribute="centerX" secondItem="8q2-hU-yo4" secondAttribute="centerX" id="P48-64-7Jg"/>
+                            <constraint firstItem="DzF-ES-LsJ" firstAttribute="top" secondItem="HVu-YF-Bqp" secondAttribute="bottom" constant="130" id="PIl-8V-nGA"/>
+                            <constraint firstItem="Zxt-S0-Q3s" firstAttribute="top" secondItem="HVu-YF-Bqp" secondAttribute="bottom" id="oJT-Uf-tTi"/>
+                            <constraint firstItem="0LN-jZ-nZC" firstAttribute="top" secondItem="HVu-YF-Bqp" secondAttribute="bottom" constant="8" symbolic="YES" id="soT-hB-JZn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOn-LO-TLU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="-1411"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1H5-CL-1qJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3BN-Qw-iQj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uN3-xs-50C">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ctZ-Fd-zMw" kind="relationship" relationship="rootViewController" id="ghH-0i-f5E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vip-dl-OCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-620" y="-1411"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
